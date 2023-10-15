@@ -19,8 +19,7 @@ public class MaterialOperations {
     private static final String USER = "root";
     private static final String PASS = "2004";
 
-    // ... Métodos de inserción, actualización y eliminación que ya tienes ...
-
+    
     public static List<Material> getMaterials() {
         List<Material> materials = new ArrayList<>();
         try (Connection conn = DriverManager.getConnection(DB_URL, USER, PASS)) {
@@ -47,7 +46,7 @@ public class MaterialOperations {
         // Ejemplo de cómo obtener y mostrar la lista de materiales
         List<Material> materials = getMaterials();
         for (Material material : materials) {
-            System.out.println(material); // Suponiendo que tienes un método toString() en la clase Material
+            System.out.println(material); 
         }
     }
 }
